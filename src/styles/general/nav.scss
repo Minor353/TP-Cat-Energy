@@ -1,0 +1,28 @@
+.nav_wrap {
+  display: flex;
+}
+
+.nav_wrap-item {
+  list-style-type: none;
+}
+
+.nav_item-link {
+  text-decoration: none;
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 20px;
+  margin-left: 25px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.nav_item-link--active {
+  border-bottom: 2px solid $black;
+}
+
+.nav_item-link--active-color {
+  border-bottom: 2px solid $white;
+}
+
+.nav_item-link--color {
+  color: $white;
+}

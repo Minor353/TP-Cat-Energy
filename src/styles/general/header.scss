@@ -1,0 +1,11 @@
+.header {
+  padding: 0 110px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--position {
+  margin-bottom: -120px;
+  z-index: 50;
+}

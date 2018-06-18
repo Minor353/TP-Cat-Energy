@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cat Energy Form</title>
+  <link rel="stylesheet" href="./assets/styles/app.min.css">
+  <link rel="shortcut icon" href="./assets/images/map-pin.png" type="image/x-icon">
+</head>
+<div class="wrapper">
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo_link">
+          <img src="./assets/images/logo-desktop.svg" alt="Logo">
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav_wrap">
+          <li class="nav_wrap-item">
+            <a href="index.html" class="nav_item-link">Главная</a>
+          </li>
+          <li class="nav_wrap-item">
+            <a href="catalog.html" class="nav_item-link">Каталог продукции</a>
+          </li>
+          <li class="nav_wrap-item">
+            <a href="form.html" class="nav_item-link  nav_item-link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form-main">
+      <h3 class="form-main_title">Подбор программы</h3>
+      <div class="form-main_description">Заполните анкету и мы подберем программу питания для вашего кота</div>
+
+      <form action="#" method="post" class="form">
+        <div class="form_section">
+          <label class="form_block">
+            <div class="form_block-name">ИМЯ:*</div>
+            <input type="text" placeholder="Барсик">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">ВЕС(КГ):*</div>
+            <input type="text" placeholder="7">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">ВОЗРАСТ(ЛЕТ):</div>
+            <input type="text" placeholder="7">
+          </label>
+        </div>
+
+        <div class="form_section">
+          <label class="form_block">
+            <div class="form_block-name">Похудение</div>
+            <input type="radio" name="program" id="">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Набор массы</div>
+            <input type="radio" name="program" id="">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Не знаю (нужен ваш совет)</div>
+            <input type="radio" name="program" id="">
+          </label>
+        </div>
+
+        <div class="form_section">
+          <h5 class="form_section-title">Контактные данные (владельца кота)</h5>
+          <label class="form_block">
+            <div class="form_block-name">E-mail:*</div>
+            <input type="text" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Телефон:*</div>
+            <input type="text" placeholder="8(960)900-60-90">
+          </label>
+        </div>
+
+        <div class="form_section">
+          <h5 class="form_section-title">Комментарий</h5>
+          <label class="form_block">
+            <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
+
+        <div class="form_section">
+          <h5 class="form_section-title">Дополнительно</h5>
+          <label class="form_block">
+            <div class="form_block-name">Сахарозаменитель</div>
+            <input type="checkbox" name="sugar">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Питевая вода</div>
+            <input type="checkbox" name="water">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Молоко</div>
+            <input type="checkbox" name="milk">
+          </label>
+          <label class="form_block">
+            <div class="form_block-name">Витамины</div>
+            <input type="checkbox" name="vit">
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+      </form>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <a href="#" class="footer-logo_link">
+        <img src="./assets/images/logo-footer.svg" alt="Logo">
+      </a>
+    </div>
+
+    <ul class="social">
+      <li class="social_item">
+        <a href="#" class="social_item-link">vk</a>
+      </li>
+      <li class="social_item">
+        <a href="#" class="social_item-link">inst</a>
+      </li>
+      <li class="social_item">
+        <a href="#" class="social_item-link">fb</a>
+      </li>
+    </ul>
+
+    <div class="footer-link">
+      <a href="#">
+        <span>HTML academy</span>
+        <img src="./assets/images/icon-htmlacademy.svg" alt="htmlacademy">
+      </a>
+    </div>
+  </footer>
+</div>
+
+<body>
+
+  <script src="./assets/scripts/form-min.js"></script>
+</body>
+
+</html>

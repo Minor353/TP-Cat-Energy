@@ -1,0 +1,22 @@
+/*Переменные*/
+
+$green: #68b738;
+$grey: #f2f2f2;
+$white: #fff;
+$black: #000;
+//////////////////////////////
+$tablet: 768px;
+$phone: 480px;
+/*Миксины*/
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}

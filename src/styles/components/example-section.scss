@@ -1,0 +1,96 @@
+.example-section {
+  background: linear-gradient(to bottom, #ffffff 0%, #fff 28%, #f2f2f2 29%, #f2f2f2 100%);
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.example_left {
+  width: 35%;
+  padding-left: 110px;
+}
+
+.example_left-title {
+  font-family: 'oswaldregular', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.example_left-text {
+  font-family: 'Arial, Helvetica, sans-serif';
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 75px;
+}
+
+.exemple_left-features {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.exemple_left-feature {
+  list-style-type: none;
+  width: 160px;
+  height: 70px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  margin-right: 40px;
+  display: flex;
+  position: relative;
+}
+
+.exemple_left-feature-title {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 30px;
+  margin: auto;
+}
+
+.exemple_left-feature-text {
+  position: absolute;
+  width: fit-content;
+  background-color: #f2f2f2;
+  padding: 0 5px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.exemple_left-cost {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 20px;
+  span {
+    margin-right: 50px;
+  }
+}
+
+.example_right {
+  width: 75%;
+  padding-left: 95px;
+}
+
+.exemple_right-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.exemple_right-range {
+  display: flex;
+  align-items: center;
+}
+
+.exemple_right-range-text {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.exemple_input-range {
+  width: 70%;
+}
