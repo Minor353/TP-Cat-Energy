@@ -1,0 +1,212 @@
+.form-main_description_wrap {
+  padding: 0 110px;
+  margin-bottom: 70px;
+}
+
+.form-main_title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.form-main_description {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  width: 325px;
+}
+
+.form {
+  padding-bottom: 80px;
+}
+
+.form_section {
+  padding: 0 110px;
+}
+
+.form_block {
+  display: flex;
+  align-items: center;
+}
+
+.form_block-name {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.form_block-input {
+  padding: 17px 15px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+
+.form_section-name {
+  padding: 0;
+  margin-right: 80px;
+  width: 50%;
+  .form_block {
+    margin-bottom: 20px;
+  }
+  .form_block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form_section-radio {
+  padding: 32px 88px;
+  width: 50%;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-section_name-wrap {
+  display: flex;
+  padding: 0 110px;
+  margin-bottom: 85px;
+}
+
+.form_section-data {
+  position: relative;
+  border-top: 3px solid $green;
+  padding: 85px 110px;
+}
+
+.form_section-title {
+  margin: 0;
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 0 40px;
+  background-color: $white;
+  position: absolute;
+  top: -25px;
+  left: 70px;
+}
+
+.form_block-data-wrap {
+  display: flex;
+  .form_block {
+    width: 50%;
+  }
+}
+
+.form_block--margin {
+  margin-right: 80px;
+}
+
+.form_block-area {
+  padding: 15px 17px;
+  width: 100%;
+  height: 175px;
+  border: 1px solid #e6e6e6;
+}
+
+.form_block-checkbox-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  .form_block {
+    padding-left: 55px;
+  }
+}
+
+.form_section--padding {
+  padding-bottom: 0;
+}
+
+/*Стили радиобатонов*/
+
+.form_block-name-radio {
+  position: relative;
+}
+
+.form_block-radio-input {
+  opacity: 0;
+}
+
+.form_block-name-radio::before {
+  content: '';
+  position: absolute;
+  left: -70px;
+  top: -8px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.form_block-name-radio::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: 4px;
+  left: -57px;
+  width: 18px;
+  height: 18px;
+  background-color: $green;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.form_block-radio-input:checked+.form_block-name-radio::after {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.form_block-radio-input:checked+.form_block-name-radio::before {
+  border-color: #bfbfbf;
+  transition: 0.3s;
+}
+
+/* Стили чекбоксов*/
+
+.form_block-name-checkbox {
+  position: relative;
+}
+
+.form_block-name-checkbox::before {
+  content: '';
+  position: absolute;
+  left: -65px;
+  top: -9px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s;
+}
+
+.form_block-name-checkbox::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: -51px;
+  top: 1px;
+  width: 14px;
+  height: 11px;
+  border-left: 2px solid $green;
+  border-bottom: 2px solid $green;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.form_block-checkbox {
+  opacity: 0;
+}
+
+.form_block-checkbox:checked+.form_block-name-checkbox::after {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.form_block-checkbox:checked+.form_block-name-checkbox::before {
+  border-color: #bfbfbf;
+  transition: 0.3s;
+}

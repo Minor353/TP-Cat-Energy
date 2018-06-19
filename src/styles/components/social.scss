@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social_item {
+  list-style-type: none;
+}
+
+.social_item-link {
+  margin-right: 28px;
+}
+
+.social_item-link-img--vk {
+  width: 30px;
+  height: 16px;
+}
+
+.social_item-link-img--insta {
+  width: 23px;
+  height: 23px;
+}
+
+.social_item-link-img--fb {
+  width: 14px;
+  height: 28px;
+}
+
+.social_item-link-img {
+  fill: #666666;
+  transition: 0.3s;
+}
+
+.social_item-link:hover .social_item-link-img {
+  fill: $green;
+  transition: 0.3s;
+}

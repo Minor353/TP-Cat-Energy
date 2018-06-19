@@ -1,0 +1,15 @@
+.btn-order {
+  font-family: 'oswaldregular', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: $white;
+  padding: 12px 53px;
+  background-color: $green;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.btn-order--margin {
+  margin-bottom: 0;
+  margin-left: auto;
+}
