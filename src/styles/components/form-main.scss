@@ -125,6 +125,13 @@
 
 .form_block-name-radio {
   position: relative;
+  transition: 0.3s;
+}
+
+.form_block-radio:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .form_block-radio-input {
@@ -170,6 +177,12 @@
 
 .form_block-name-checkbox {
   position: relative;
+}
+
+.form_block-checkbox-label:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .form_block-name-checkbox::before {

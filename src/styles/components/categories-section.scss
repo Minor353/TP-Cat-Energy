@@ -76,6 +76,7 @@
   text-decoration: none;
   color: $black;
   position: relative;
+  transition: 0.3s;
 }
 
 .categories_item-link::after {
@@ -89,4 +90,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.categories_item-link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }

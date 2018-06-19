@@ -6,4 +6,10 @@
   text-transform: uppercase;
   font-family: 'oswaldregular', sans-serif;
   font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn-program:hover {
+  background-color: #5eaa2f;
+  transition: 0.3s;
 }

@@ -7,4 +7,10 @@
   background-color: $grey;
   text-transform: uppercase;
   margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.btn-show:hover {
+  background-color: #ebebeb;
+  transition: 0.3s;
 }

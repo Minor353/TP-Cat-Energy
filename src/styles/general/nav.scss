@@ -4,6 +4,12 @@
 
 .nav_wrap-item {
   list-style-type: none;
+  transition: 0.2s;
+}
+
+.nav_wrap-item:hover {
+  opacity: 0.7;
+  transition: 0.2s;
 }
 
 .nav_item-link {
