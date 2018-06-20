@@ -2,6 +2,9 @@
   width: 205px;
   height: 70px;
   transition: 0.3s;
+  @include phone() {
+    width: 70%;
+  }
 }
 
 .logo_link {

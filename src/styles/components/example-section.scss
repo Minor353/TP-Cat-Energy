@@ -2,11 +2,25 @@
   background: linear-gradient(to bottom, #ffffff 0%, #fff 28%, #f2f2f2 29%, #f2f2f2 100%);
   display: flex;
   padding-bottom: 70px;
+  @include tablet() {
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff 0%, #fff 59%, #f2f2f2 60%, #f2f2f2 100%);
+  }
+  @include phone() {
+    background: linear-gradient(to bottom, #f2f2f2 0%, #f2f2f2 100%);
+    padding-bottom: 30px;
+  }
 }
 
 .example_left {
   width: 35%;
   padding-left: 110px;
+  @include tablet() {
+    width: 92%;
+    padding-left: 0;
+    padding: 0 30px;
+  }
 }
 
 .example_left-title {
@@ -16,6 +30,14 @@
   margin-top: 0;
   margin-bottom: 100px;
   margin-top: 50px;
+  @include tablet() {
+    margin-bottom: 67px;
+  }
+  @include phone() {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .example_left-text {
@@ -23,6 +45,19 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 75px;
+  @include phone() {
+    font-size: 14px;
+  }
+}
+
+.exemple_left-features-wrap {
+  @include tablet() {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include phone() {
+    flex-direction: column;
+  }
 }
 
 .exemple_left-features {
@@ -30,6 +65,9 @@
   padding: 0;
   margin: 0;
   margin-bottom: 55px;
+  @include phone() {
+    margin-bottom: 35px;
+  }
 }
 
 .exemple_left-feature {
@@ -41,6 +79,15 @@
   margin-right: 40px;
   display: flex;
   position: relative;
+  @include phone() {
+    margin-right: 0;
+  }
+}
+
+.exemple_left-feature:first-child {
+  @include phone() {
+    margin-right: 30px;
+  }
 }
 
 .exemple_left-feature-title {
@@ -65,19 +112,37 @@
 .exemple_left-cost {
   font-family: 'oswaldregular', sans-serif;
   font-size: 20px;
+  @include tablet() {
+    width: 160px;
+    text-align: right;
+  }
+  @include phone() {
+    width: 100%;
+    text-align: center;
+  }
   span {
     margin-right: 50px;
+    @include tablet() {
+      margin-right: 0;
+    }
   }
 }
 
 .example_right {
   width: 75%;
   padding-left: 95px;
+  @include tablet() {
+    padding-left: 0;
+    width: 85%;
+  }
 }
 
 .exemple_right-img {
   width: 80%;
   margin: 0 auto;
+  @include tablet() {
+    margin: 0;
+  }
 }
 
 .exemple_right-range {

@@ -4,9 +4,23 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
+  @include tablet() {
+    padding: 0 30px;
+    padding-top: 25px;
+  }
+  @include phone() {
+    padding: 0 20px;
+    padding-top: 10px;
+  }
 }
 
 .header--position {
   margin-bottom: -120px;
   z-index: 50;
+  @include tablet() {
+    margin-bottom: 55px;
+  }
+  @include phone() {
+    margin-bottom: 0;
+  }
 }

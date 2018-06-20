@@ -1,9 +1,17 @@
 .footer {
   display: flex;
+  flex: 1;
   padding: 0 110px;
   justify-content: space-between;
   align-items: center;
   background-color: $grey;
+  @include tablet() {
+    padding: 45px 30px;
+  }
+  @include phone() {
+    flex-direction: column;
+    padding: 30px 0;
+  }
 }
 
 .footer-logo_link {

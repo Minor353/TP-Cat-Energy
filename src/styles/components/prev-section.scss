@@ -2,17 +2,40 @@
   height: 100vh;
   display: flex;
   margin-bottom: 75px;
+  @include tablet() {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  @include phone() {
+    position: relative;
+    height: 90vh;
+  }
 }
 
 .prev-section_left {
   width: 50%;
   height: 100%;
   display: flex;
+  @include tablet() {
+    width: 85%;
+  }
+  @include phone() {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75%;
+  }
 }
 
 .prev-section_left-wrap {
   margin: auto;
   width: 430px;
+  @include phone() {
+    margin: 0 auto;
+    width: 283px;
+    position: relative;
+  }
 }
 
 .prev-section_title {
@@ -21,6 +44,11 @@
   font-weight: 300;
   margin: 0;
   margin-bottom: 45px;
+  @include phone() {
+    font-size: 36px;
+    color: $white;
+    text-align: center;
+  }
 }
 
 .prev-section_slogan {
@@ -29,12 +57,23 @@
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 50px;
+  @include phone() {
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+  }
 }
 
 .prev-section_right {
   width: 50%;
   height: 100%;
   z-index: -2;
+  @include tablet() {
+    align-self: center;
+  }
+  @include phone() {
+    width: 100%;
+  }
 }
 
 .prev-section_product {
@@ -44,10 +83,23 @@
 
 .prev-section_product-bg {
   height: 100%;
+  @include tablet() {
+    display: none;
+  }
+  @include phone() {
+    display: initial;
+    height: auto;
+    width: 100%;
+  }
 }
 
 .prev-section_product-img {
   position: absolute;
   left: -200px;
   top: 25%;
+  @include phone() {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 29%;
+  }
 }

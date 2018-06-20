@@ -19,3 +19,11 @@
   background-color: #5eaa2f;
   transition: 0.3s;
 }
+
+.btn-order--size {
+  @include tablet() {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+}

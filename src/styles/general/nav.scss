@@ -1,3 +1,9 @@
+.nav {
+  @include phone() {
+    display: none;
+  }
+}
+
 .nav_wrap {
   display: flex;
 }
@@ -19,6 +25,9 @@
   margin-left: 25px;
   text-transform: uppercase;
   color: $black;
+  @include tablet() {
+    font-size: 18px;
+  }
 }
 
 .nav_item-link--active {
@@ -27,8 +36,14 @@
 
 .nav_item-link--active-color {
   border-bottom: 2px solid $white;
+  @include tablet() {
+    border-color: $green;
+  }
 }
 
 .nav_item-link--color {
   color: $white;
+  @include tablet() {
+    color: $black;
+  }
 }

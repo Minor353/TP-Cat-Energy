@@ -3,6 +3,10 @@
   position: relative;
   padding: 0 110px;
   border-top: 1px solid transparent;
+  @include tablet() {
+    padding: 0;
+    height: 600px;
+  }
 }
 
 .map {
@@ -22,6 +26,13 @@
   padding: 65px 75px;
   margin-top: 110px;
   width: 45%;
+  @include tablet() {
+    width: auto;
+    margin-top: 0;
+  }
+  @include phone() {
+    padding: 30px 20px;
+  }
 }
 
 .map_advert-title {
@@ -30,6 +41,9 @@
   font-size: 20px;
   line-height: 25px;
   text-transform: uppercase;
+  @include phone() {
+    font-size: 16px;
+  }
 }
 
 .map_adress {
@@ -37,4 +51,7 @@
   font-size: 16px;
   line-height: 25px;
   width: 160px;
+  @include phone() {
+    font-size: 14px;
+  }
 }

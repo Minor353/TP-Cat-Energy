@@ -1,6 +1,14 @@
 .advantages-section {
   padding: 0 110px;
   margin-bottom: 10px;
+  @include tablet() {
+    padding: 0 30px;
+  }
+  @include phone() {
+    padding: 0;
+    width: 94%;
+    margin: 0 auto;
+  }
 }
 
 .advantages_title {
@@ -8,6 +16,9 @@
   font-weight: 300;
   font-size: 60px;
   margin-top: 0;
+  @include phone() {
+    font-size: 36px;
+  }
 }
 
 .advantages_wrap {
@@ -16,6 +27,9 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  @include tablet() {
+    flex-wrap: wrap;
+  }
 }
 
 .advantages_item {
@@ -23,6 +37,16 @@
   width: 20%;
   padding-bottom: 55px;
   position: relative;
+  @include tablet() {
+    width: 40%;
+    margin-bottom: 70px;
+  }
+  @include phone() {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .advantages_item-number {
@@ -34,6 +58,12 @@
   top: -40px;
   right: 25px;
   z-index: -1;
+  @include tablet() {
+    right: -15px;
+  }
+  @include phone() {
+    display: none;
+  }
 }
 
 .advantages_item-img {
@@ -44,6 +74,10 @@
   height: 78px;
   background-color: $green;
   margin-bottom: 35px;
+  @include phone() {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .advantages_item-img--first {
@@ -66,4 +100,8 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  @include phone() {
+    width: 80%;
+    margin-left: 20px;
+  }
 }

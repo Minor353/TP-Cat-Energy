@@ -7,6 +7,14 @@
   font-family: 'oswaldregular', sans-serif;
   font-size: 20px;
   transition: 0.3s;
+  @include phone() {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .btn-program:hover {
