@@ -130,7 +130,6 @@
 
 .example_right {
   width: 75%;
-  padding-left: 95px;
   @include tablet() {
     padding-left: 0;
     width: 85%;
@@ -140,6 +139,7 @@
 .exemple_right-img {
   width: 80%;
   margin: 0 auto;
+  position: relative;
   @include tablet() {
     margin: 0;
   }
@@ -153,9 +153,46 @@
 .exemple_right-range-text {
   font-family: 'oswaldregular', sans-serif;
   font-size: 20px;
-  margin: 0 10px;
+  margin-left: 80px;
+  border: 1px solid transparent;
+  padding: 10px 40px;
+  border-radius: 25px;
+  transition: 0.3s;
+  @include phone() {
+    margin: 0;
+  }
 }
 
-.exemple_input-range {
-  width: 70%;
+.exemple_right-range-text:hover {
+  border: 1px solid $green;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.exemple_right-range-text:first-child {
+  margin-left: 26%;
+  @include phone() {
+    margin: 0;
+  }
+}
+
+.exemple_right-range-text--active {
+  border: 1px solid $green;
+  background-color: $green;
+  color: $white;
+  transition: 0.3s;
+}
+
+.exemple_right-img-before,
+.exemple_right-img-after {
+  position: initial;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.exemple_right-img--inactive {
+  position: absolute;
+  opacity: 0;
+  transition: 0.8s;
+  z-index: -5;
 }
