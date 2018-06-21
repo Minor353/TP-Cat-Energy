@@ -6,6 +6,9 @@
 
 .nav_wrap {
   display: flex;
+  @include tablet() {
+    margin-top: 26px;
+  }
 }
 
 .nav_wrap-item {

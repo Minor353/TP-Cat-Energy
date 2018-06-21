@@ -4,6 +4,7 @@
   transition: 0.3s;
   @include phone() {
     width: 70%;
+    height: 60px;
   }
 }
 

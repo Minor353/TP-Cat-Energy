@@ -1,12 +1,19 @@
+.burger-wrap {
+  display: none;
+  @include phone() {
+    display: block;
+    margin-top: 6%;
+  }
+}
+
 .burger {
   width: 24px;
   height: 4px;
   background-color: $black;
-  margin-top: 25px;
   border-radius: 4px;
   position: relative;
   display: none;
-  @include tablet() {
+  @include phone() {
     display: block;
     z-index: 1001;
   }

@@ -13,6 +13,12 @@
   @include tablet() {
     margin-bottom: 0;
   }
+  @include phone() {
+    font-size: 36px;
+    padding: 27px 0;
+    text-align: center;
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .products-catalog_wrap {
@@ -38,6 +44,17 @@
   align-items: center;
   @include tablet() {
     width: 324px;
+  }
+  @include phone() {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+  }
+}
+
+.products-catalog_item:first-child {
+  @include phone() {
+    margin-top: 65px;
   }
 }
 
@@ -100,10 +117,17 @@
   font-size: 20px;
   margin: 0;
   text-align: center;
+  @include phone() {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .products-catalog_more-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
+  @include phone() {
+    margin-bottom: 40px;
+  }
 }

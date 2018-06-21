@@ -15,7 +15,13 @@
   position: absolute;
   top: -28px;
   left: 40px;
-  margin: 0
+  margin: 0;
+  @include phone() {
+    font-size: 24px;
+    top: -18px;
+    left: 15px;
+    padding: 0 20px;
+  }
 }
 
 .extras-section_wrap {
@@ -51,8 +57,9 @@
     flex-wrap: wrap;
     padding: 25px 35px;
   }
-  span {
-    text-align: left;
+  @include phone() {
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -68,6 +75,11 @@
   @include tablet() {
     width: 66%;
   }
+  @include phone() {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 
 .extras_item-amount {
@@ -77,6 +89,10 @@
   font-size: 16px;
   @include tablet() {
     width: 26%;
+  }
+  @include phone() {
+    width: 70%;
+    font-size: 14px;
   }
 }
 
@@ -88,6 +104,10 @@
   text-align: right;
   @include tablet() {
     width: 7%;
+  }
+  @include phone() {
+    width: 30%;
+    font-size: 14px;
   }
 }
 
@@ -110,12 +130,18 @@
     flex-direction: row;
     padding: 60px 88px;
   }
+  @include phone() {
+    flex-direction: column;
+  }
 }
 
 .extras_gift-img {
   fill: $white;
   width: 84px;
   height: 90px;
+  @include phone() {
+    margin-bottom: 60px;
+  }
 }
 
 .extras_gift-text {
@@ -129,5 +155,8 @@
     text-transform: initial;
     text-align: left;
     font-size: 18px;
+  }
+  @include phone() {
+    text-align: center;
   }
 }

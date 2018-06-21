@@ -13,6 +13,11 @@
   font-family: 'oswaldregular', sans-serif;
   font-size: 60px;
   font-weight: 300;
+  @include phone() {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
 }
 
 .form-main_description {
@@ -20,10 +25,16 @@
   font-size: 20px;
   font-weight: 300;
   width: 325px;
+  @include phone() {
+    font-size: 14px;
+    width: auto;
+  }
 }
 
 .form {
   padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form_section {
@@ -41,6 +52,9 @@
   font-weight: 300;
   text-transform: uppercase;
   margin-right: 20px;
+  @include phone() {
+    font-size: 16px;
+  }
 }
 
 .form_block-input {
@@ -75,6 +89,10 @@
   justify-content: space-between;
   @include tablet() {
     width: auto;
+  }
+  @include phone() {
+    padding: 25px 70px;
+    padding-right: 10px;
   }
 }
 
@@ -119,6 +137,18 @@
   position: absolute;
   top: -25px;
   left: 70px;
+  @include phone() {
+    left: 0;
+    top: -18px;
+    font-size: 24px;
+    padding: 0 28px;
+  }
+}
+
+.form_section-title--width {
+  @include phone() {
+    width: 182px;
+  }
 }
 
 .form_block-data-wrap {
@@ -161,6 +191,9 @@
     padding-left: 55px;
     width: 40%;
     margin-bottom: 55px;
+    @include phone() {
+      width: 100%;
+    }
   }
 }
 

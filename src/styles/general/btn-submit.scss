@@ -8,6 +8,11 @@
   border: none;
   margin-left: 110px;
   transition: 0.3s;
+  @include phone() {
+    margin-left: 0;
+    margin: 0 auto;
+    padding: 12px 80px;
+  }
 }
 
 .btn-submit:hover {

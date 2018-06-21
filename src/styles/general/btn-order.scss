@@ -26,4 +26,7 @@
     text-align: center;
     margin-top: 25px;
   }
+  @include phone() {
+    margin-top: 16px;
+  }
 }
