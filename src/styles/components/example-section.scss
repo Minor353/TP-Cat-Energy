@@ -148,6 +148,9 @@
 .exemple_right-range {
   display: flex;
   align-items: center;
+  @include phone() {
+    justify-content: space-between;
+  }
 }
 
 .exemple_right-range-text {

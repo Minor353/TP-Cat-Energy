@@ -6,6 +6,6 @@ module.exports = function () {
     navBtn.classList.toggle('burger-active');
     navPanel.classList.toggle('nav-active');
     navPanel.classList.toggle('nav-animate');
-  })
+  });
 
 };
