@@ -1,7 +1,10 @@
 .burger-wrap {
   display: none;
-  @include phone() {
+  @include tablet() {
     display: block;
+    margin-top: 4%;
+  }
+  @include phone() {
     margin-top: 6%;
   }
 }
@@ -13,7 +16,7 @@
   border-radius: 4px;
   position: relative;
   display: none;
-  @include phone() {
+  @include tablet() {
     display: block;
     z-index: 1001;
   }
